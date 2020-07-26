@@ -8,4 +8,5 @@ services:
     volumes:
     - .:/app
     environment:
+    # Chokidar, which Webpack uses for watching changes has an environment to force the use of polling: CHOKIDAR_USEPOLLING
     - CHOKIDAR_USEPOLLING=true
